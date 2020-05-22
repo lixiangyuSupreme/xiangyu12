@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>照片墙</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        body {
+            background: #fff url(bg3.jpg);
+        }
+        
+        ul.yu li {
+            display: inline;
+        }
+        
+        ul.yu a {
+            background: #fff;
+            display: inline;
+            float: left;
+            margin: 30px 0 27px 30px;
+            padding: 10px 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            transition: transform .15s linear;
+        }
+        
+        ul.yu img {
+            display: block;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        
+        ul.yu a:after {
+            content: attr(title);
+        }
+        
+        ul.yu li:nth-child(even) a {
+            transform: rotate(5deg);
+            transform: rotate(5deg);
+        }
+        
+        ul.yu li:nth-child(2n) a {
+            position: relative;
+            top: -5px;
+            transform: none;
+            transform: none;
+        }
+        
+        ul.yu li:nth-child(3n) a {
+            position: relative;
+            right: 5px;
+            transform: rotate(-10deg);
+            transform: rotate(-10deg);
+        }
+        
+        ul.yu li:nth-child(4n) a {
+            position: relative;
+            right: 5px;
+            top: 8px;
+        }
+        
+        ul.yu li:nth-child(5n) a {
+            position: relative;
+            left: -5px;
+            top: 3px;
+        }
+        
+        ul.yu li a:hover {
+            transform: scale(1.25);
+            transform: scale(1.25);
+            position: relative;
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="yu">
+        <li>
+            <a href="1" title="相识"> <img src="1.jpg" alt="相识" /> </a>
+        </li>
+        <li>
+            <a href="2" title="凝视"> <img src="2.jpg" alt="凝视" /> </a>
+        </li>
+        <li>
+            <a href="3" title="甜睡"> <img src="3.jpg" alt="甜睡" /> </a>
+        </li>
+        <li>
+            <a href="4" title="逗乐"> <img src="4.jpg" alt="逗乐" /> </a>
+        </li>
+        <li>
+            <a href="5" title="奔跑"> <img src="5.jpg" alt="奔跑" /> </a>
+        </li>
+        <li>
+            <a href="6" title="漠视"> <img src="6.jpg" alt="凝视" /> </a>
+        </li>
+    </ul>
+</body>
+
+</html>
